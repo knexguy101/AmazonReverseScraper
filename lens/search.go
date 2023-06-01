@@ -51,7 +51,7 @@ func Search(t *http.Client, imageBytes []byte, imageUrl string) (*SearchResult, 
 
 	writer.Close()
 
-	req, _ := http.NewRequest("POST", fmt.Sprintf("https://lens.google.com/upload?ep=ccm&re=dcsp&s=4&st=%d&lm=ChAIAhIMCKSB4KMGEMCX+qYDChoIAxIMCKSB4KMGEIClsagDGggIjJ5IELCNIA==&sideimagesearch=1", time.Now().UnixMilli()), bytes.NewReader(body.Bytes()))
+	req, _ := http.NewRequest("POST", fmt.Sprintf("https://lens.google.com/upload?ep=ccm&re=dcsp&s=4&st=%d&lm=1&sideimagesearch=1", time.Now().UnixMilli()), bytes.NewReader(body.Bytes()))
 	req.Header = map[string][]string{
 		"Content-Type":  {writer.FormDataContentType()},
 		"Accept":        {"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"},
