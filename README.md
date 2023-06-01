@@ -10,3 +10,5 @@ Reverse search amazon products and find other similar/matching products listed t
 - Image (given any image link)
 - Product (given any amazon product link)
 - Store (given any amazon store link)
+
+![demo](https://i.gyazo.com/e40e1f3997ff7ff1cdaeda202b199a13.png)
