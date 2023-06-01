@@ -44,7 +44,7 @@ func main() {
 }
 
 func printCommands() {
-	fmt.Println("[COMMANDS] (")
+	fmt.Println("[COMMANDS]")
 	fmt.Println("image [image link]\nproduct [amazon product link]\nstore [max # of items searched] [amazon store link]")
 	fmt.Printf("->")
 }
